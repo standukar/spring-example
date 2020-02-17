@@ -5,6 +5,9 @@ public class address {
 	private String address2;
 	private String city;
 	private String state;
+	
+	private String zipcode;
+	
 	public String getAddress1() {
 		return address1;
 	}
@@ -28,6 +31,13 @@ public class address {
 	}
 	public void setState(String state) {
 		this.state = state;
+	}
+	
+	public String getZipcode() {
+		return zipcode;
+	}
+	public void setZipcode(String zipcode) {
+		this.zipcode = zipcode;
 	}
 	@Override
 	public String toString() {
