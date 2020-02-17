@@ -1,0 +1,23 @@
+<beans  xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+  
+  <bean id = "driver1" class = "com.abc.rab3.pojos.Driver">
+  <property name="id" value = "1"></property>
+  <property name="name" value = "Sid"></property>
+  <property name="license" value = "VA-1234"></property>
+  <property name="address" ref = "add1"></property>
+  </bean>
+  
+  <bean id = "add1" class = "com.abc.rab3.pojos.address">
+  <property name="address1" value = "7374 lee highway"></property>
+  <property name="address2" value = "201"></property>
+  <property name="city" value = "Falls Church"></property>
+    <property name="state" value = "VA"></property>
+  
+  </bean>
+
+
+
+</beans>
